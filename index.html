@@ -9,34 +9,63 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <h1 id = "title">Misheck-3d Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
-    <form action="" id="survey-form">
-      <label for="name" id="name-label">Name</label>
-      <input type="text" name="" id="name" placeholder="Name" required = "">
-      <label id="email-label" for="email">Email</label>
-      <input type="email" name="" id="email" placeholder="Email" required = "">
-      <label for="number" id="number-label">Age (optional)</label>
-      <input type="number" name="" id="number" min="1" max = "100" placeholder="Age">
-      <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
-      <select name="" id="dropdown">
-        <option>Select current role</option>
-        <option>Student</option>
-        <option>Full Time Job</option>
-        <option>Full Time Learner</option>
-        <option>Prefer not to say</option>
-        <option>Other</option>
-      </select>
+        <h1 id = "title">Misheck-3d Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
 
-      <label for="">Would you recommend freeCodeCamp to a friend?</label>
-      <div class="radio">
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="" id="name" placeholder="Name" required = "">
 
-        <label for="definitely"><input type="radio" id = "definitely" name="frequency" value="definitely"> Definitely</label>
-        <label for="maybe"><input type="radio" id = "maybe" name="frequency" value="maybe"> Maybe</label>
-        <label for="not-sure"><input type="radio" id = "not-sure" name="frequency" value="not-sure"> Not Sure</label>
-    </div>
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="" id="email" placeholder="Email" required = "">
 
-    </form>
+            <label for="number" id="number-label">Age (optional)</label>
+            <input type="number" name="" id="number" min="1" max = "100" placeholder="Age">
+
+            <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+            <select name="" id="dropdown">
+              <option>Select current role</option>
+              <option>Student</option>
+              <option>Full Time Job</option>
+              <option>Full Time Learner</option>
+              <option>Prefer not to say</option>
+              <option>Other</option>
+            </select>
+
+            <label for="">Would you recommend freeCodeCamp to a friend?</label>
+
+            <div class="radio">
+
+                <label for="definitely"><input type="radio" id = "definitely" name="frequency" value="definitely"> Definitely</label>
+                <label for="maybe"><input type="radio" id = "maybe" name="frequency" value="maybe"> Maybe</label>
+                <label for="not-sure"><input type="radio" id = "not-sure" name="frequency" value="not-sure"> Not Sure</label>
+            </div>
+
+          <label for="favourite" id="favourite-label">What is your favorite feature of freeCodeCamp?</label>
+          <select name="" id="favourite">
+            <option>Select an option</option>
+            <option>Challenges</option>
+            <option>Projects</option>
+            <option>Community</option>
+            <option>Open Source</option>
+            <option>Other</option>
+          </select>
+
+          <label for="">What would you like to see improved? <small>(Check all that apply)</small></label>
+            <div class="checkbox">
+
+                <label for="back-end-projects"><input type="checkbox" id = "back-end-projects" value="Front-end Projects"> Front-end Projects</label>
+                <label for="back-end-projects"><input type="checkbox" id = "back-end-projects" value="Back-end Projects"> Back-end Projects</label>
+                <label for="data-visualization"><input type="checkbox" id = "data-visualization" value="Data Visualization"> Data Visualization</label>
+
+            </div>
+
+            <label for="comments" id="comments-label">Any comments or suggestions?</label>
+            <textarea name="comments" id="comments" rows="10" placeholder="comments"></textarea>
+
+            <input type="submit" id="submit" value = "Submit">
+
+        </form>
     <script  src="js/index.js"></script>
   </body>
 </html>
